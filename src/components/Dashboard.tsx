@@ -55,16 +55,7 @@ const Dashboard: React.FC = () => {
         {reportCategories.map((category) => (
           <div key={category.id} className="bg-white p-3 md:p-4 rounded-lg shadow border border-gray-200">
             <h3 className="font-medium text-base md:text-lg mb-2 md:mb-3">{category.name}</h3>
-            <div className="flex justify-center items-center h-32 md:h-40 bg-gray-50 rounded-md">
-              {category.id === 'goals' && <BarChart className="h-16 w-16 md:h-20 md:w-20 text-blue-500" />}
-              {category.id === 'finance' && <LineChart className="h-16 w-16 md:h-20 md:w-20 text-green-500" />}
-              {category.id === 'partners' && <PieChart className="h-16 w-16 md:h-20 md:w-20 text-purple-500" />}
-              {category.id === 'orders' && <BarChart className="h-16 w-16 md:h-20 md:w-20 text-orange-500" />}
-              {category.id === 'production' && <LineChart className="h-16 w-16 md:h-20 md:w-20 text-red-500" />}
-              {category.id === 'technical' && <PieChart className="h-16 w-16 md:h-20 md:w-20 text-indigo-500" />}
-              {category.id === 'requirements' && <BarChart className="h-16 w-16 md:h-20 md:w-20 text-teal-500" />}
-            </div>
-            <div className="mt-2 md:mt-3 text-right">
+            <div className="text-right">
               <button className="text-blue-600 hover:text-blue-800 text-sm font-medium">
                 Xem chi tiết
               </button>
